@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Miama:wght@400&display=swap");
+
+:root {
+  --primary: 8, 77%, 57%;
+  --white: 0, 0%, 100%;
+  --main-bg: 0, 0%, 0%;
+  --sub-bg: 0, 0%, 13%;
+
+  font-family: "Inter", Verdana, sans-serif;
+  color: hsl(var(--white));
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+section {
+  margin: clamp(64px, calc(4.72vw + 43.83px), 112px) 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+.fluid {
+  max-width: 100%;
+}
+
+.btn {
+  padding: 1rem 2.5rem;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  border-radius: 2.5rem;
+  border: none;
+  outline: none;
+}
+
+.btn-primary {
+  background-color: hsl(var(--primary));
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid hsl(var(--white));
+}
+
+.container {
+  width: clamp(320px, 90vw, 1200px);
+  margin: 0 auto;
+}
+
+.brand {
+  font: italic 800 2rem;
+  color: hsl(var(--primary));
+}
+
+@media screen and (min-width: 576px) {
+  h1 {
+    font-size: 78px;
+  }
+
+  h2 {
+    font-size: 48px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  .container {
+    width: clamp(320px, 80vw, 1200px);
+  }
+}

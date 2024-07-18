@@ -92,13 +92,10 @@ h4 {
   margin: 0 auto;
 }
 
-.brand {
+.brand span {
   font-style: italic;
   font-weight: 800;
   color: hsl(var(--primary));
-}
-
-.brand span {
   font-size: 2em;
 }
 
@@ -561,5 +558,61 @@ header .hero .box div span:last-child {
 @media screen and (min-width: 768px) {
   #team .trainers {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* footer section */
+footer {
+  padding: 3rem 0 2rem;
+  background-color: hsl(var(--sub-bg));
+}
+
+footer .grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+footer .brand p {
+  margin-top: 1rem;
+  max-width: 600px;
+}
+
+footer .links p {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(var(--white));
+}
+
+footer .links a {
+  display: inline-block;
+  padding: 0.25rem 0;
+  text-transform: capitalize;
+}
+
+footer hr {
+  margin: 3rem 0 2rem;
+  border-color: hsla(var(--white), 0.5);
+}
+
+footer .container > p:last-child {
+  text-align: center;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 576px) {
+  footer .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer .brand {
+    grid-column: span 2;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer .grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

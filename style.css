@@ -384,8 +384,14 @@ header .hero .box div span:last-child {
 }
 
 /* bmi section */
+#bmi > div:first-child h2 {
+  text-align: center;
+}
+
 #bmi > div:first-child p {
-  margin: 1rem 0 2rem;
+  margin: 1rem auto 2rem;
+  max-width: 800px;
+  text-align: center;
 }
 
 #bmi > div:last-child {
@@ -561,6 +567,101 @@ header .hero .box div span:last-child {
   }
 }
 
+/* blog section */
+#blog .container h2 {
+  text-align: center;
+}
+
+#blog .container > p {
+  margin: 1rem auto 2rem;
+  max-width: 800px;
+}
+
+#blog .container > form {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#blog form input {
+  margin-right: 1rem;
+  padding: 0.5rem 0.75rem;
+  width: min(calc(100% - 120px), 300px);
+  font-size: 16px;
+  background-color: hsla(var(--white), 0.1);
+  color: hsl(var(--white));
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+#blog .btn {
+  padding: 0.5rem 0.75rem;
+  font-size: 16px;
+}
+
+#blog .blogs {
+  background-color: hsl(var(--sub-bg));
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  border-radius: 1rem;
+}
+
+#blog .blogs li {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+#blog .blogs .image {
+  width: 100%;
+  aspect-ratio: 250 / 200;
+  border-radius: 0.5rem;
+}
+
+#blog .blogs li:nth-child(1) .image {
+  background: url("./images/exercise-1.png") center no-repeat;
+  background-size: cover;
+}
+
+#blog .blogs li:nth-child(2) .image {
+  background: url("./images/exercise-2.png") center no-repeat;
+  background-size: cover;
+}
+
+#blog .blogs li:nth-child(3) .image {
+  background: url("./images/exercise-3.png") center no-repeat;
+  background-size: cover;
+}
+
+#blog .blogs li:nth-child(4) .image {
+  background: url("./images/exercise-4.png") center no-repeat;
+  background-size: cover;
+}
+
+#blog .blogs li:nth-child(5) .image {
+  background: url("./images/exercise-5.png") center no-repeat;
+  background-size: cover;
+}
+
+#blog .blogs li:nth-child(6) .image {
+  background: url("./images/exercise-6.png") center no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 576px) {
+  #blog .blogs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #blog .blogs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 /* footer section */
 footer {
   padding: 3rem 0 2rem;

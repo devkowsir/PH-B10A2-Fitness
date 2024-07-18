@@ -471,3 +471,95 @@ header .hero .box div span:last-child {
     flex-direction: row;
   }
 }
+
+/* team section */
+#team {
+  text-align: center;
+}
+
+#team .container > p {
+  margin: 1rem auto 2rem;
+  max-width: 800px;
+}
+
+#team .trainers {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  display: grid;
+  text-align: left;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  background-color: hsl(var(--sub-bg));
+  border-radius: 1rem;
+}
+
+#team .trainers li {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 327 / 272;
+  border-radius: 0.5rem;
+}
+
+#team .trainers li:nth-child(1) {
+  background: url("./images/trainer-1.png") center no-repeat;
+  background-size: cover;
+}
+
+#team .trainers li:nth-child(2) {
+  background: url("./images/trainer-2.png") center no-repeat;
+  background-size: cover;
+}
+
+#team .trainers li:nth-child(3) {
+  background: url("./images/trainer-3.png") center no-repeat;
+  background-size: cover;
+}
+
+#team .trainers li:nth-child(4) {
+  background: url("./images/trainer-4.png") center no-repeat;
+  background-size: cover;
+}
+
+#team .trainers li:nth-child(5) {
+  background: url("./images/trainer-5.png") center no-repeat;
+  background-size: cover;
+}
+
+#team .trainers li:nth-child(6) {
+  background: url("./images/trainer-6.png") center no-repeat;
+  background-size: cover;
+}
+
+#team .trainers .info {
+  position: absolute;
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+  bottom: 0;
+  background-color: hsla(var(--main-bg), 0.2);
+  backdrop-filter: blur(4px);
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+#team .trainers .info p {
+  height: 21px;
+  color: hsl(var(--white));
+  font-weight: 800;
+  font-size: 18px;
+  text-wrap: nowrap;
+}
+
+#team .trainers .info small {
+  color: hsla(var(--white), 0.5);
+}
+
+@media screen and (min-width: 576px) {
+  #team .trainers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #team .trainers {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

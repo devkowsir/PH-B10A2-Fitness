@@ -30,6 +30,7 @@ a {
 
 p {
   color: hsla(var(--white), 0.5);
+  font-size: 14px;
 }
 
 ul {
@@ -151,6 +152,7 @@ header .content h1 span {
 
 header .content p {
   margin: 2rem 0;
+  font-size: 16px;
 }
 
 header .content .actions {
@@ -226,6 +228,7 @@ header .hero .box-1 div span:first-child {
 
 header .hero .box.box-2 div span:first-child {
   font-size: 1.5em;
+  font-weight: 800;
 }
 
 header .hero .box div span:last-child {
@@ -247,5 +250,54 @@ header .hero .box div span:last-child {
 
   header .content .actions .tablet {
     display: initial;
+  }
+}
+
+/* change habits section */
+#change-habits {
+  text-align: center;
+}
+
+#change-habits .container > p {
+  margin: 1.5rem auto 3rem;
+  width: min(90%, 600px);
+}
+
+#change-habits ul {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+#change-habits li img {
+  border: 4px solid hsl(var(--sub-bg));
+  border-radius: 50%;
+}
+
+#change-habits li p:first-of-type {
+  margin: 1.5rem 0 0.25rem;
+  font-size: 18px;
+  font-weight: 600;
+  color: hsl(var(--white));
+}
+
+#change-habits li p:last-child {
+  margin: auto auto;
+  width: min(80%, 600px);
+}
+
+@media screen and (min-width: 576px) {
+  #change-habits .container > p {
+    margin: 2rem auto 4rem;
+  }
+
+  #change-habits ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #change-habits ul {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

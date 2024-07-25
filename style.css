@@ -64,6 +64,10 @@ h4 {
   font-size: 20px;
 }
 
+option {
+  background-color: hsl(var(--main-bg));
+}
+
 .fluid {
   max-width: 100%;
 }
@@ -76,6 +80,10 @@ h4 {
   border-radius: 2.5rem;
   border: none;
   outline: none;
+}
+
+.btn-small {
+  padding-block: 0.5rem;
 }
 
 .btn-primary {
@@ -97,6 +105,12 @@ h4 {
   font-weight: 800;
   color: hsl(var(--primary));
   font-size: 2em;
+}
+
+@media screen and (max-width: 575px) {
+  .hide-in-mobile {
+    display: none !important;
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -134,6 +148,14 @@ header nav .nav-links a {
   text-transform: capitalize;
 }
 
+header nav .nav-links .active a {
+  display: inline-block;
+  margin: -0.25rem -0.75rem;
+  padding: 0.25rem 0.75rem;
+  background-color: hsl(var(--primary));
+  border-radius: 1.5rem;
+}
+
 header nav .menu {
   margin-left: auto;
 }
@@ -159,10 +181,6 @@ header .content .actions {
 
 header .content .actions > button {
   padding: clamp(12px, calc(3.8vw - 0.5px), 16px) clamp(26px, calc(14vw - 23px), 40px);
-}
-
-header .content .actions .tablet {
-  display: none;
 }
 
 header .hero {
@@ -243,10 +261,6 @@ header .hero .box div span:last-child {
 
   header .banner {
     margin-top: 4.5rem;
-  }
-
-  header .content .actions .tablet {
-    display: initial;
   }
 }
 
@@ -419,7 +433,7 @@ header .hero .box div span:last-child {
 #bmi .chart table tr,
 #bmi .chart table th,
 #bmi .chart table td {
-  outline: 2px solid hsla(var(--white), 0.1);
+  outline: 2px solid hsl(0, 0%, 36%);
 }
 
 #bmi .chart table th,
@@ -460,13 +474,7 @@ header .hero .box div span:last-child {
 }
 
 #bmi .calculator button {
-  padding-block: 0.5rem;
   width: max-content;
-}
-
-#bmi .calculator button span {
-  display: inline-block;
-  width: 100px;
 }
 
 @media screen and (min-width: 992px) {
@@ -543,7 +551,7 @@ header .hero .box div span:last-child {
   border-radius: 0 0 0.5rem 0.5rem;
 }
 
-#team .trainers .info p {
+#team .trainers .info h4 {
   height: 21px;
   color: hsl(var(--white));
   font-weight: 800;
@@ -573,19 +581,24 @@ header .hero .box div span:last-child {
 }
 
 #blog .container > p {
+  text-align: center;
   margin: 1rem auto 2rem;
   max-width: 800px;
 }
 
 #blog .container > form {
   margin-bottom: 2rem;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 #blog form input {
   margin-right: 1rem;
-  padding: 0.5rem 0.75rem;
-  width: min(calc(100% - 120px), 300px);
+  padding: 1rem;
+  width: min(100%, 400px);
   font-size: 16px;
   background-color: hsla(var(--white), 0.1);
   color: hsl(var(--white));
@@ -594,18 +607,14 @@ header .hero .box div span:last-child {
   border-radius: 0.5rem;
 }
 
-#blog .btn {
-  padding: 0.5rem 0.75rem;
-  font-size: 16px;
-}
-
 #blog .blogs {
+  padding: clamp(24px, calc(10.59vw - 21.71px), 40px);
   background-color: hsl(var(--sub-bg));
-  padding: 1.5rem;
+  border-radius: 1rem;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 1.5rem;
-  border-radius: 1rem;
+  text-align: left;
 }
 
 #blog .blogs li {
@@ -613,6 +622,10 @@ header .hero .box div span:last-child {
   flex-direction: column;
   align-items: start;
   gap: 0.5rem;
+}
+
+#blog .blogs li a {
+  margin-top: auto;
 }
 
 #blog .blogs .image {
@@ -652,6 +665,14 @@ header .hero .box div span:last-child {
 }
 
 @media screen and (min-width: 576px) {
+  #blog .container > form {
+    flex-direction: row;
+  }
+
+  #blog .container > div:last-child {
+    padding: 1.5rem;
+  }
+
   #blog .blogs {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -690,6 +711,11 @@ footer .links a {
   display: inline-block;
   padding: 0.25rem 0;
   text-transform: capitalize;
+}
+
+footer .links.links-2 ul {
+  display: flex;
+  gap: 1rem;
 }
 
 footer hr {

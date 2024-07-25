@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fitness</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
@@ -12,8 +19,8 @@
         <nav>
           <div class="brand"><span>Fitness</span></div>
           <ul class="nav-links">
-            <li><a href="./home.html">home</a></li>
-            <li><a href="./sevice.html">sevice</a></li>
+            <li class="active"><a href="./home.html">home</a></li>
+            <li><a href="./sevices.html">sevices</a></li>
             <li><a href="./contact.html">contact</a></li>
             <li><a href="./about.html">about</a></li>
           </ul>
@@ -23,12 +30,12 @@
           <div class="content">
             <h1>Get body in <span>shape</span> & stay healthy</h1>
             <p>
-              A huge selection of health and fitness content, healthy recipes and transformation stories to help you get
-              fit and stay fit!
+              Our club has helped around 10k people to stay fit and building a better life. We will be glad to make your
+              life better.
             </p>
             <div class="actions">
               <button class="btn btn-primary">
-                <span>Join <span class="tablet">Club</span> Now!</span>
+                <span>Join <span class="hide-in-mobile">Club</span> Now!</span>
               </button>
               <button class="btn btn-secondary"><span>Download App</span></button>
             </div>
@@ -57,30 +64,27 @@
       <section id="change-habits">
         <div class="container">
           <h2>Change Your Habits</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis minus autem rem a iure nihil in voluptas
-            quibusdam accusamus! Facilis?
-          </p>
+          <p>Don't make yourself driven by bad habits. Build good habits and build a better life!</p>
           <ul>
             <li>
               <img src="./images/habit-1.png" alt="movement" />
               <p>Movement</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, accusamus.</p>
+              <p>Build habit of movement. It will increase your metabolism and keep you at least in good shape.</p>
             </li>
             <li>
               <img src="./images/habit-2.png" alt="time" />
               <p>Time</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, accusamus.</p>
+              <p>Keep some time of your day for taking care of your health.</p>
             </li>
             <li>
               <img src="./images/habit-3.png" alt="practice" />
               <p>Practice</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, accusamus.</p>
+              <p>Practice makes a man perfect. Increase practice time daily.</p>
             </li>
             <li>
               <img src="./images/habit-4.png" alt="weight loss" />
               <p>Weight Loss</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, accusamus.</p>
+              <p>Loss weight easily with workouts, controlled diet and running for long sessions.</p>
             </li>
           </ul>
         </div>
@@ -89,10 +93,7 @@
         <div class="container">
           <div class="content">
             <h2>Run an Extra Mile Easily</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum magnam corporis maiores blanditiis laborum
-              est iusto dolorum repellendus nam esse?
-            </p>
+            <p>Can't run even a mile? Our marathon trainer has a special guideline for building stamina!</p>
             <button class="btn btn-primary">Join Now!</button>
           </div>
           <div class="image"></div>
@@ -103,8 +104,9 @@
         <div class="container">
           <h2>BMI Calculator</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id accusantium saepe neque nobis voluptas molestias
-            similique accusamus nisi, a aut.
+            Calculate your BMI. But Don't take it for granted. Even if your BMI is good, your muscle might not strong,
+            your stamina might be low, your health is not fit. So, join without hesitation. And if your BMI is not good
+            you should join ASAP.
           </p>
         </div>
         <div>
@@ -137,12 +139,12 @@
             <div class="calculator">
               <h3>Calculate Your BMI</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci odit eaque rerum facilis voluptates
-                debitis illo tenetur odio.
+                It cannot be simpler than this. Input your weight and height in whatever unit you know. Example: 66in,
+                5ft 6in, 1.79m, 179cm, 61kg, 134.48lb etc.
               </p>
               <form>
-                <input type="number" name="height" id="height" placeholder="Height/cm" />
-                <input type="number" name="weight" id="weight" placeholder="Weight/kg" />
+                <input type="text" name="height" id="height" placeholder="Height" />
+                <input type="text" name="weight" id="weight" placeholder="Weight" />
                 <input type="number" name="age" id="age" placeholder="Age" />
                 <select name="sex" id="sex">
                   <option value="male">Male</option>
@@ -165,44 +167,44 @@
         <div class="container">
           <h2>Meet Our Team</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, voluptatum? Corrupti ipsam eaque culpa
-            suscipit?
+            Our trainers are one of the best trainers around the world. Each of them has a special category they work on
+            which makes them specialist.
           </p>
           <ul class="trainers">
             <li>
               <div class="info">
-                <p>Jerome Bell</p>
-                <small>Trainer</small>
+                <h4>Jerome Bell</h4>
+                <small>Chest Specialist</small>
               </div>
             </li>
             <li>
               <div class="info">
-                <p>Cameron Williamson</p>
-                <small>Trainer</small>
+                <h4>Cameron Williamson</h4>
+                <small>Stamina Builder</small>
               </div>
             </li>
             <li>
               <div class="info">
-                <p>Darrell Steward</p>
-                <small>Trainer</small>
+                <h4>Darrell Steward</h4>
+                <small>Hand Transformer</small>
               </div>
             </li>
-            <li>
+            <li class="hide-in-mobile">
               <div class="info">
-                <p>Dianne Russell</p>
-                <small>Trainer</small>
+                <h4>Dianne Russell</h4>
+                <small>Nutrition Specialist</small>
               </div>
             </li>
-            <li>
+            <li class="hide-in-mobile">
               <div class="info">
-                <p>Cody Fisher</p>
-                <small>Trainer</small>
+                <h4>Cody Fisher</h4>
+                <small>Abs Builder</small>
               </div>
             </li>
-            <li>
+            <li class="hide-in-mobile">
               <div class="info">
-                <p>Theresa Webb</p>
-                <small>Trainer</small>
+                <h4>Theresa Webb</h4>
+                <small>Leg Specialist</small>
               </div>
             </li>
           </ul>
@@ -212,10 +214,7 @@
       <section id="blog">
         <div class="container">
           <h2>Subscribe to Our Blog</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima a eaque sapiente alias ipsa, ducimus nihil
-            reiciendis autem cum doloremque!
-          </p>
+          <p>Our blog is information rich, written in an easy to understand way. Get access to premium content fast.</p>
           <form>
             <input type="email" name="email" id="email" placeholder="user@mail.com" />
             <button class="btn btn-primary">Subscribe</button>
@@ -223,57 +222,51 @@
           <ul class="blogs">
             <li>
               <div class="image"></div>
-              <h3>Beginer Guide to Reduce Belly Fat</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quidem praesentium possimus
-                reprehenderit. Consequuntur necessitatibus itaque debitis, recusandae ut molestias.
-              </p>
-              <button class="btn btn-secondary">Read More</button>
+              <h4>Bicycle Crunch: Your Guide to Reduce Belly Fat.</h4>
+              <p>Which breaks the shape of your absolutely quickly? Yeah it's belly fat and very hard to...</p>
+              <a href="./blog/a2c802fe75f"><button class="btn btn-small btn-secondary">Read More</button></a>
             </li>
             <li>
               <div class="image"></div>
-              <h3>Beginer Guide to Reduce Belly Fat</h3>
+              <h4>Side Leg Press: Start Building Leg Muscle.</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quidem praesentium possimus
-                reprehenderit. Consequuntur necessitatibus itaque debitis, recusandae ut molestias.
+                Legs are used by everyone everyday all the time but in a very minimal way. Which keeps them fit but
+                muscle is not grown...
               </p>
-              <button class="btn btn-secondary">Read More</button>
+              <a href="./blog/a2c802fe75f"><button class="btn btn-small btn-secondary">Read More</button></a>
             </li>
             <li>
               <div class="image"></div>
-              <h3>Beginer Guide to Reduce Belly Fat</h3>
+              <h4>Start Building Your Precious Hand Muscle.</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quidem praesentium possimus
-                reprehenderit. Consequuntur necessitatibus itaque debitis, recusandae ut molestias.
+                If you are not an labor, your hand is used in very easy way. Start your hand muscle building with these
+                easy exercises...
               </p>
-              <button class="btn btn-secondary">Read More</button>
+              <a href="./blog/a2c802fe75f"><button class="btn btn-small btn-secondary">Read More</button></a>
             </li>
-            <li>
+            <li class="hide-in-mobile">
               <div class="image"></div>
-              <h3>Beginer Guide to Reduce Belly Fat</h3>
+              <h4>Run Like Pro Athletes.</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quidem praesentium possimus
-                reprehenderit. Consequuntur necessitatibus itaque debitis, recusandae ut molestias.
+                Want to build your stamina, leg muscle? Running is your best exercise. But cannot run for more than few
+                minutes? Here is how to run like pro athletes...
               </p>
-              <button class="btn btn-secondary">Read More</button>
+              <a href="./blog/a2c802fe75f"><button class="btn btn-small btn-secondary">Read More</button></a>
             </li>
-            <li>
+            <li class="hide-in-mobile">
               <div class="image"></div>
-              <h3>Beginer Guide to Reduce Belly Fat</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quidem praesentium possimus
-                reprehenderit. Consequuntur necessitatibus itaque debitis, recusandae ut molestias.
-              </p>
-              <button class="btn btn-secondary">Read More</button>
+              <h4>Let's Fix Our Push Ups.</h4>
+              <p>Everyone knows to do pushups. But how many of us knows to do them properly? Why not fix them?...</p>
+              <a href="./blog/a2c802fe75f"><button class="btn btn-small btn-secondary">Read More</button></a>
             </li>
-            <li>
+            <li class="hide-in-mobile">
               <div class="image"></div>
-              <h3>Beginer Guide to Reduce Belly Fat</h3>
+              <h4>Increase Flexibility, Prevent Aging.</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quidem praesentium possimus
-                reprehenderit. Consequuntur necessitatibus itaque debitis, recusandae ut molestias.
+                Keep your body flexible and make your joints very flexible. This gives of the joy of moving rather than
+                pain...
               </p>
-              <button class="btn btn-secondary">Read More</button>
+              <a href="./blog/a2c802fe75f"><button class="btn btn-small btn-secondary">Read More</button></a>
             </li>
           </ul>
         </div>
@@ -285,26 +278,37 @@
           <div class="brand">
             <span>Fitness</span>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, neque eius ab deserunt nesciunt est
-              deleniti a repellendus doloremque natus molestias explicabo vitae ea numquam quia sint.
+              A huge selection of health and fitness content, healthy recipes and transformation stories to help you get
+              fit and stay fit!
             </p>
           </div>
           <div class="links links-1">
             <p>Get Started</p>
             <ul>
-              <li><a href="service">service</a></li>
-              <li><a href="contact us">contact us</a></li>
-              <li><a href="affiliate program">affiliate program</a></li>
-              <li><a href="about us">about us</a></li>
+              <li><a href="fitness">Join our gym</a></li>
+              <li><a href="platform">Be a professional trainer</a></li>
+              <li><a href="workout library">get our workout library</a></li>
+              <li><a href="app design">be a content provier</a></li>
             </ul>
           </div>
           <div class="links links-2">
-            <p>Get Started</p>
+            <p>Join With Our Healthy Communities</p>
             <ul>
-              <li><a href="fitness">fitness</a></li>
-              <li><a href="platform">platform</a></li>
-              <li><a href="workout library">workout library</a></li>
-              <li><a href="app design">app design</a></li>
+              <li>
+                <a href="https://twitter.com/c/fitness"><i class="fab fa-xl fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="https://facebook.com/g/fitness"><i class="fab fa-xl fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="https://instagram.com/p/fitness"><i class="fab fa-xl fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="https://reddit.com/r/fitness"><i class="fab fa-xl fa-reddit"></i></a>
+              </li>
+              <li>
+                <a href="https://quora.com/c/fitness"><i class="fab fa-xl fa-quora"></i></a>
+              </li>
             </ul>
           </div>
         </div>

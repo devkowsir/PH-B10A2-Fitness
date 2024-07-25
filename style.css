@@ -607,10 +607,15 @@ header .hero .box div span:last-child {
   border-radius: 0.5rem;
 }
 
-#blog .blogs {
+#blog .container > div:last-child {
   padding: clamp(24px, calc(10.59vw - 21.71px), 40px);
   background-color: hsl(var(--sub-bg));
   border-radius: 1rem;
+  text-align: center;
+}
+
+#blog .blogs {
+  margin-bottom: 2rem;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 1.5rem;

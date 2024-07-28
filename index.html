@@ -14,15 +14,16 @@
     />
   </head>
   <body>
-    <header>
+    <header id="home">
       <div class="container">
         <nav>
           <div class="brand"><span>Fitness</span></div>
           <ul class="nav-links">
-            <li class="active"><a href="./home.html">home</a></li>
-            <li><a href="./sevices.html">sevices</a></li>
-            <li><a href="./contact.html">contact</a></li>
-            <li><a href="./about.html">about</a></li>
+            <li><a href="#home">home</a></li>
+            <li><a href="#change-habits">sevices</a></li>
+            <li><a href="#team">about</a></li>
+            <li><a href="#blog">blog</a></li>
+            <li><a href="#footer">contact</a></li>
           </ul>
           <div class="menu"><img src="./images/icons/menu.png" alt="menu" /></div>
         </nav>
@@ -37,7 +38,7 @@
               <button class="btn btn-primary">
                 <span>Join <span class="hide-in-mobile">Club</span> Now!</span>
               </button>
-              <button class="btn btn-secondary"><span>Download App</span></button>
+              <button class="btn btn-secondary">Download App</button>
             </div>
           </div>
           <div class="hero">
@@ -147,14 +148,16 @@
                 <input type="text" name="weight" id="weight" placeholder="Weight" />
                 <input type="number" name="age" id="age" placeholder="Age" />
                 <select name="sex" id="sex">
+                  <option value="" selected disabled>Select Sex</option>
                   <option value="male">Male</option>
                   <option value="female">Female</option>
                   <option value="other">Other</option>
                 </select>
                 <select name="activity" id="activity">
+                  <option value="" selected disabled>Select Activity</option>
                   <option value="sports">Sports</option>
-                  <option value="corporate-office">Corporate Office</option>
-                  <option value="other">Other</option>
+                  <option value="office">Office</option>
+                  <option value="others">Others</option>
                 </select>
                 <button class="btn btn-primary"><span>Calculate</span></button>
               </form>
@@ -275,7 +278,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer id="footer">
       <div class="container">
         <div class="grid">
           <div class="brand">
@@ -291,11 +294,11 @@
               <li><a href="fitness">Join our gym</a></li>
               <li><a href="platform">Be a professional trainer</a></li>
               <li><a href="workout library">get our workout library</a></li>
-              <li><a href="app design">be a content provier</a></li>
+              <li><a href="app design">be a content provider</a></li>
             </ul>
           </div>
           <div class="links links-2">
-            <p>Join With Our Healthy Communities</p>
+            <p>Join With Healthy Communities</p>
             <ul>
               <li>
                 <a href="https://twitter.com/c/fitness"><i class="fab fa-xl fa-twitter"></i></a>

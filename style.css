@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Miama:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Miama:wght@400&display=swap");
 
 :root {
   --primary: 8, 77%, 57%;
@@ -8,6 +8,9 @@
 
   font-family: "Inter", Verdana, sans-serif;
   color: hsl(var(--white));
+
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
 }
 
 body {
@@ -141,19 +144,20 @@ header nav .nav-links {
   display: none;
   margin-left: auto;
   font-size: 18px;
-  gap: 2rem;
+  gap: clamp(24px, calc(4.16vw - 0.24px), 32px);
 }
 
 header nav .nav-links a {
   text-transform: capitalize;
-}
-
-header nav .nav-links .active a {
   display: inline-block;
   margin: -0.25rem -0.75rem;
   padding: 0.25rem 0.75rem;
-  background-color: hsl(var(--primary));
   border-radius: 1.5rem;
+  transition: all 250ms ease-in-out;
+}
+
+header nav .nav-links li:hover a {
+  background-color: hsl(var(--primary));
 }
 
 header nav .menu {
@@ -241,7 +245,7 @@ header .hero .box-1 div span:first-child {
   font-weight: 800;
 }
 
-header .hero .box.box-2 div span:first-child {
+header .hero .box-2 div span:first-child {
   font-size: 1.5em;
   font-weight: 800;
 }
@@ -488,6 +492,10 @@ header .hero .box div span:last-child {
   text-align: center;
 }
 
+#team .container {
+  box-shadow: 0 0 30px 0 rgba(255, 255, 255, 0.1);
+}
+
 #team .container > p {
   margin: 1rem auto 2rem;
   max-width: 800px;
@@ -576,6 +584,10 @@ header .hero .box div span:last-child {
 }
 
 /* blog section */
+#blog .container {
+  box-shadow: 0 0 30px 0 rgba(255, 255, 255, 0.1);
+}
+
 #blog .container h2 {
   text-align: center;
 }

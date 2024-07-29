@@ -142,9 +142,12 @@ header nav {
 
 header nav .nav-links {
   display: none;
+  padding: 0.4rem 0.9rem;
   margin-left: auto;
   font-size: 18px;
   gap: clamp(24px, calc(4.16vw - 0.24px), 32px);
+  border: 2px solid hsl(var(--sub-bg));
+  border-radius: 1.5rem;
 }
 
 header nav .nav-links a {
@@ -156,6 +159,7 @@ header nav .nav-links a {
   transition: all 250ms ease-in-out;
 }
 
+header nav .nav-links li.active a,
 header nav .nav-links li:hover a {
   background-color: hsl(var(--primary));
 }

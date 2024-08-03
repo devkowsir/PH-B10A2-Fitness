@@ -132,6 +132,7 @@ option {
 
 /* header section */
 header {
+  background: linear-gradient(to bottom, hsl(var(--main-bg)) 0%, hsl(var(--sub-bg)) 50%, hsl(var(--main-bg)) 100%);
   padding-top: 3rem;
 }
 
